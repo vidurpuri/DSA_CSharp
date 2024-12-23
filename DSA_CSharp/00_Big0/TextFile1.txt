@@ -1,0 +1,5 @@
+﻿Big O Rules : 
+1. Worst Case - Always take the worst case into account when caluclating Big O
+2. Drop Constaint Terms Calculation -  When calcuating Big O ignore Constanats suchas O(1)
+3. Different terms for inputs - Treat different input as different set of notations in Big O such as O( a + b) repesents 2 different paraneter two function. nested loop would be O(a*b)
+4. Drop Non Dominants : Always take into account the most dominant Big O suchas ^ > * > / > Constants.

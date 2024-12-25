@@ -5,6 +5,6 @@ using DSA_CSharp._01_Section4_GoogleCoding;
 int[] arr1 = new int[] {6,4,3,2,1,7 };
 
 
-bool result = GoogleCodingInterview.HasPairWithSum(arr1, 9);
+bool result = GoogleCodingInterview.HasPairWithSumNestedLoop(arr1, 9);
 Console.WriteLine(result);
 

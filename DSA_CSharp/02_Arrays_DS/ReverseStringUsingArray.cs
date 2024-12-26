@@ -8,7 +8,7 @@ namespace DSA_CSharp._02_Arrays_DS
 {
     public class ReverseStringUsingArray
     {
-        public string word = "Kaira not sleeping";
+        public string word = "Dany not sleeping";
 
         public string Reverse()
         {
@@ -20,8 +20,20 @@ namespace DSA_CSharp._02_Arrays_DS
                 reversed = item.ToString() + reversed;
             }
 
-            return new string(reversed);
+            return reversed;
             
+        }
+
+        public string ReverseusingForLoop()
+        {
+            string reversed = string.Empty;
+
+            for (int i = word.Length - 1; i >= 0;i--)
+            {
+                reversed += word[i]; 
+            }
+
+            return reversed.ToString();
         }
     }
 }

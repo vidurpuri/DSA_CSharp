@@ -4,7 +4,7 @@ using DSA_CSharp._01_Section4_GoogleCoding;
 using DSA_CSharp._02_Arrays_DS;
 
 ReverseStringUsingArray reverseStringUsing = new ReverseStringUsingArray();
-Console.WriteLine(reverseStringUsing.Reverse());
+Console.WriteLine(reverseStringUsing.ReverseusingForLoop());
 
 
 

@@ -44,6 +44,22 @@ namespace DSA_CSharp._03_HashTables_DS
             //    hashtable.Add(arr[i], arr[i]);
             //}
             //return 0;
+
+            //for(int i = 0; i < arr.Length; i++)
+            //{
+            //    for (int j = i+1;j < arr.Length; j++)
+            //    {
+            //        var prviousValue = arr[j];
+            //        if (prviousValue == arr[j])
+            //            return arr[j];
+            //        if (arr[i] == arr[j])
+            //        {
+            //            return arr[i];
+            //        }
+
+            //    }
+            //}
+            //return 0;
         }
     }
 }

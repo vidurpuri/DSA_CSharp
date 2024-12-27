@@ -5,7 +5,7 @@ using DSA_CSharp._02_Arrays_DS;
 using DSA_CSharp._03_HashTables_DS;
 
 RecurringNumber recurring = new RecurringNumber();
-int[] arr = new int[] { 2, 5, 3, 4,4 };
+int[] arr = new int[] { 2, 5, 4};
 var result = recurring.RecurringNum(arr);
 Console.WriteLine(result);
 

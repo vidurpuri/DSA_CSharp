@@ -6,17 +6,18 @@ using DSA_CSharp._03_HashTables_DS;
 using DSA_CSharp._04_LinkedLists_DS;
 using DSA_CSharp._05_Stacks_Queues_DS;
 
-StacksUsingArray stacksUsingArray = new StacksUsingArray(5);
-stacksUsingArray.Push(1);
-stacksUsingArray.Push(2);
-stacksUsingArray.Push(3);
-stacksUsingArray.Push(5);
-stacksUsingArray.Print();
+QueuesUsingStack queuesUsingStack = new();
 
-Console.WriteLine("Peek Value" + " " + stacksUsingArray.Peek());
+queuesUsingStack.Enqueue(1);
+queuesUsingStack.Enqueue(2);
+queuesUsingStack.Enqueue(3);
+queuesUsingStack.Enqueue(5);
+queuesUsingStack.printQueue();
 
-stacksUsingArray.Pop();
-stacksUsingArray.Print();
+Console.WriteLine("Peek Value" + " " + queuesUsingStack.Peek());
+
+queuesUsingStack.Dequeue();
+queuesUsingStack.printQueue();
 
 
 

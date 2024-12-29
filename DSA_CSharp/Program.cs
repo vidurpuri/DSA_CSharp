@@ -12,7 +12,7 @@ queuesUsingStack.Enqueue(1);
 queuesUsingStack.Enqueue(2);
 queuesUsingStack.Enqueue(3);
 queuesUsingStack.Enqueue(5);
-queuesUsingStack.printQueue();
+//queuesUsingStack.printQueue();
 
 Console.WriteLine("Peek Value" + " " + queuesUsingStack.Peek());
 

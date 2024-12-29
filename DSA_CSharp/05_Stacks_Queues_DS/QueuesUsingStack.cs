@@ -10,63 +10,47 @@ namespace DSA_CSharp._05_Stacks_Queues_DS
 {
     public class QueuesUsingStack
     {
-        private Stack<int> s1 = new Stack<int>();
-        private Stack<int> s2 = new Stack<int>();
+        private Stack<int> pushStack = new Stack<int>();
+        private Stack<int> popStack = new Stack<int>();
 
         //Enqueue
         public void Enqueue(int value)
         {
-            this.s1.Push(value);
+            pushStack.Push(value);
         }
 
         //Dequeue
         public int Dequeue()
         {
-            fill_S2With_S1();
-            int value = s2.Peek();
-            fill_S1With_S2();
-            return value;
+            if(popStack.Count == 0)
+            {
+                while(pushStack.Count > 0)
+                {
+                    popStack.Push(pushStack.Pop());
+                }
+            }
+            if (popStack.Count == 0) return -1;
+            return popStack.Pop();
         }
 
-        //Peek
+        ////Peek
         public int Peek()
         {
-            fill_S2With_S1();
-            int value = s2.Peek();
-            fill_S1With_S2();
-            return value;
-        }
-
-        public void printQueue()
-        {
-            if (s1.Count == 0)
+            if (popStack.Count == 0)
             {
-                return;
+                while (pushStack.Count > 0)
+                {
+                    popStack.Push(pushStack.Pop());
+                }
             }
-
-            fill_S2With_S1();
-            foreach (var i in s2)
-            {
-                Console.Write("-->" + i);
-            }
-            Console.WriteLine();
-            fill_S1With_S2();
+            if (popStack.Count == 0) return -1;
+            return popStack.Peek();
         }
 
-        private void fill_S2With_S1()
+        public bool IsEmpty()
         {
-            while (s1.Count > 0)
-            { //Making the "auxiliaryStack" stack as queue of "Stack"
-                s2.Push(s1.Pop());
-            }
+            return pushStack.Count == 0 && popStack.Count == 0;
         }
-
-        private void fill_S1With_S2()
-        {
-            while (s2.Count > 0)
-            { //Return stack to the original state
-                s1.Push(s2.Pop());
-            }
-        }
+       
     }
 }

@@ -4,19 +4,19 @@ using DSA_CSharp._01_Section4_GoogleCoding;
 using DSA_CSharp._02_Arrays_DS;
 using DSA_CSharp._03_HashTables_DS;
 using DSA_CSharp._04_LinkedLists_DS;
+using DSA_CSharp._05_Stacks_Queues_DS;
 
-DoubleLinkedListImplementation linkedList = new(10);
-linkedList.Append(5);
-linkedList.Append(2);
-linkedList.Append(1);
-linkedList.Append(6);
+StacksUsingArray stacksUsingArray = new StacksUsingArray(5);
+stacksUsingArray.Push(1);
+stacksUsingArray.Push(2);
+stacksUsingArray.Push(3);
+stacksUsingArray.Push(5);
+stacksUsingArray.Print();
 
-//linkedList.Prepend(3);
-//linkedList.Insert(2, 25);
-//linkedList.Remove(2);
-linkedList.PrintData();
-linkedList.Reverse();
-linkedList.PrintData();
+Console.WriteLine("Peek Value" + " " + stacksUsingArray.Peek());
+
+stacksUsingArray.Pop();
+stacksUsingArray.Print();
 
 
 
